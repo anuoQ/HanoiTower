@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class Hanoi {
 
 	static HashMap<Integer, LinkedList<Integer>> map = new HashMap<>();
-	static int num = 10;
+	static int num = 2;
 	static int count = 0;
 	static {
 		LinkedList<Integer> list1 = new LinkedList<>();
