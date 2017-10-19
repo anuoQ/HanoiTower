@@ -32,7 +32,7 @@ public class Hanoi {
 
 	private static void hanoi(Integer n, int from, int to) {
 		//		System.out.println(from + "-->" + to + "  " + n);
-		int t = from + to;
+		/*int t = from + to;
 		switch (t) {
 		case 4:
 			t = 2;
@@ -43,7 +43,8 @@ public class Hanoi {
 		case 5:
 			t = 1;
 			break;
-		}
+		}*/
+		int t = 6 / (from * to); // explicit
 		if (n == 1) {
 			map.get(to).addFirst(map.get(from).removeFirst());
 			System.out.println("          " + from + " _" + n + "_ -->" + to);
