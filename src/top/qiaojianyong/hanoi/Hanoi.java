@@ -5,11 +5,11 @@ import java.util.LinkedList;
 
 public class Hanoi {
 
-	static HashMap<Integer, LinkedList<Integer>> map = new HashMap<>();
-	static int num = 3;
-	static int count = 0;
+	static HashMap<Integer, LinkedList<Integer>> map = new HashMap<>(); // store holders
+	static int num = 3; // dish num
+	static int count = 0; // steps count
 	static {
-		LinkedList<Integer> list1 = new LinkedList<>();
+		LinkedList<Integer> list1 = new LinkedList<>(); // dish holder
 		LinkedList<Integer> list2 = new LinkedList<>();
 		LinkedList<Integer> list3 = new LinkedList<>();
 
@@ -64,7 +64,7 @@ public class Hanoi {
 	}
 
 	/**
-	 * 
+	 *  draw the result after every step
 	 */
 	public static void draw() {
 		for (int i = 0; i < num; i++) {
